@@ -10,12 +10,15 @@ function loadTexture(path) {
   return texture;
 }
 
+// Block version options: 2.0, 3.0,
+const blockVersion = '2.0';
+
 const textures = {
-  grassTop: loadTexture('blocks/grass-top3.0.jpg'),
-  grassSide: loadTexture('blocks/grass-side3.0.jpg'),
-  dirt: loadTexture('blocks/dirt3.0.jpg'),
-  stone: loadTexture('blocks/stone.jpg'),
-  coalOre: loadTexture('blocks/coalOre.jpg'),
+  grassTop: loadTexture(`blocks/grass-top${blockVersion}.jpg`),
+  grassSide: loadTexture(`blocks/grass-side${blockVersion}.jpg`),
+  dirt: loadTexture(`blocks/dirt${blockVersion}.jpg`),
+  stone: loadTexture(`blocks/stone${blockVersion}.jpg`),
+  coalOre: loadTexture(`blocks/coalOre${blockVersion}.jpg`),
 };
 
 const material = new THREE.MeshLambertMaterial();
